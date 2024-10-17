@@ -6,12 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-        onwarn(warning, warn) {
-            // Ignore specific warnings or handle them
-            if (warning.code === 'THIS_IS_UNDEFINED') return;
-            // Call default handler
-            warn(warning);
-        },
+        external: ['react-router-dom'],
     },
 },
   server: {port: 5173}
