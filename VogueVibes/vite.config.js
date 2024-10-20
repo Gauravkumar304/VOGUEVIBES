@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: { port: 5173 },
+  optimizeDeps: {
+    include: ['react-toastify'],
+  },
   build: {
     rollupOptions: {
       external: ['react', 'react-dom','react-router-dom','react-toastify'], // Replace 'your-external-module' with the actual module name causing the issue
