@@ -9,6 +9,7 @@ export default defineConfig({
     include: ['react', 'react-dom','react-router-dom','react-toastify'], // Replace with the problematic module name
   },
   build: {
+    sourcemap: true,
     rollupOptions: {
       //external: ['react', 'react-dom','react-router-dom','react-toastify'], // Replace 'your-external-module' with the actual module name causing the issue
       onwarn(warning, warn) {
