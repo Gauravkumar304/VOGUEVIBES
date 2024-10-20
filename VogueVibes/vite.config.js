@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: { port: 5173 },
   optimizeDeps: {
-    include: ['react-toastify'],
+    include: ['react', 'react-dom','react-router-dom','react-toastify'], // Replace with the problematic module name
   },
   build: {
     rollupOptions: {
