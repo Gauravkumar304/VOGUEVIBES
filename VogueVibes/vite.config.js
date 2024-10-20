@@ -7,7 +7,7 @@ export default defineConfig({
   server: { port: 5173 },
   build: {
     rollupOptions: {
-      external: ['react', 'react-dom','react-router-dom'], // Replace 'your-external-module' with the actual module name causing the issue
+      external: ['react', 'react-dom','react-router-dom','react-toastify'], // Replace 'your-external-module' with the actual module name causing the issue
     },
   },
 })
